@@ -12,13 +12,17 @@ for (let i = 0; i < 256; i++) {
 function ereaseCanvas() {
     let blankCanvas = document.querySelectorAll('.pixelDiv');
 
-    blankCanvas.forEach((div) => div.style.backgroundColor = "white");
+    blankCanvas.forEach((element) => element.style.backgroundColor = "white");
 }
 
 function colorBrush() {
-    this.style.backgroundColor = color
+    if (color === 'random') {
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+    } else {
+        this.style.backgroundColor = color
+    }
 }
 
 function changeBrush(currentColor) {
- color = currentColor;
+   color = currentColor;
 }
