@@ -12,8 +12,6 @@ body {
     height: 600px;
     width: 600px;
     border: 3px solid black;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
 }
 
 button {
@@ -22,4 +20,10 @@ button {
     padding: 10px 20px;
     border: 1px solid #151615;
     border-radius: 5px;
+}
+
+.warning {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
 }
